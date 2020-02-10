@@ -1,0 +1,13 @@
+function fb = fizzbuzz(x)
+for n = 1:100
+    if  == mod(n, 3)
+        disp("fizz")
+    elseif n == mod(n, 5)
+        disp("buzz")
+    elseif n == mod(n, 15)
+        disp("fizzbuzz")
+    else
+        disp(n)
+    end
+end
+end

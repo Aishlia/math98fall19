@@ -1,0 +1,30 @@
+function [isMagicSquare] = magicsquare(A)
+    rows = size(A, 1);
+    columns = size(A, 2);
+    
+    if size(A) == [0,0]  % checking for the empty array
+        [isMagicSquare] = [1]
+    end
+    
+    if rows ~= columns % checking for non-squares
+        [isMagicSquare] = [0]
+    end
+    
+    colm_sum = sum(A,1)
+    row_sum = sum(A, 2)
+    right_diag = trace(A)
+    for i = 1:rows
+        if row_sum[1] ~= row_sum[i]
+            [isMagicSquare] = [0]
+        end
+    end
+    for i = 1:col
+        if row_sum[1] ~= row_sum[i]
+            [isMagicSquare] = [0]
+        end
+    end
+        
+    
+}
+    
+end     
